@@ -28,10 +28,12 @@
             Scanner sc=new Scanner(System.in);
             int n=sc.nextInt();
             int prices[]=new int[n];
-            for(int i=0;i<n;i++)
+            for(int i=0;i<n;i++){
             prices[i]=sc.nextInt();
+            }
             int money=sc.nextInt();
-            System.out.println(getMaxToys(prices,money));
+            
+            System.out.println("The maximum number of toys :"+getMaxToys(prices,money));
         }
 
 }
